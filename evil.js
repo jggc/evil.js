@@ -227,4 +227,9 @@
       return getClass.call(value);
     }
   };
+  
+  if(typeof console !== "undefined"){
+    this.console.log = this.console.clear;
+  }
+
 }).call(this);
